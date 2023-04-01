@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b90613ce.css",
+    "main.js": "/static/js/main.7a3be6ee.js",
+    "static/media/portfolio10.jpg": "/static/media/portfolio10.ce7f0f852d09fb04ed11.jpg",
+    "static/media/pp3.avif": "/static/media/pp3.2e9a205e9b6e44fc902a.avif",
+    "static/media/pricing1.png": "/static/media/pricing1.c7a3c733ddfb18e16a1d.png",
+    "static/media/1.png": "/static/media/1.d5a3e71fc566b1a2dc18.png",
+    "static/media/p4.avif": "/static/media/p4.3cfe1cb423e7d454a295.avif",
+    "static/media/pp1.avif": "/static/media/pp1.1a0b4bc266fc89b7f2ac.avif",
+    "static/media/pp5.avif": "/static/media/pp5.15698d48b3184665e947.avif",
+    "static/media/pp6.avif": "/static/media/pp6.c4a5f1bde2a47e4ed42a.avif",
+    "static/media/pp2.avif": "/static/media/pp2.948013f1a517b232c99d.avif",
+    "static/media/pp4.avif": "/static/media/pp4.19a4b9797a6e46baeb0a.avif",
+    "static/media/p3.avif": "/static/media/p3.8793ac09c389dfcfcce0.avif",
+    "static/media/pricing2.png": "/static/media/pricing2.8b5337eb0ba19089a6c1.png",
+    "static/media/pp7.jpeg": "/static/media/pp7.b0373efbcf0a6f52e680.jpeg",
+    "static/media/milestone-background.png": "/static/media/milestone-background.4ed80b24e9b453afc55d.png",
+    "static/media/cc.jpeg": "/static/media/cc.539b1c5f8dbd57f3437e.jpeg",
+    "index.html": "/index.html",
+    "main.b90613ce.css.map": "/static/css/main.b90613ce.css.map",
+    "main.7a3be6ee.js.map": "/static/js/main.7a3be6ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b90613ce.css",
+    "static/js/main.7a3be6ee.js"
+  ]
+}
