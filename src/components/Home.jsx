@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import home from "assets/p3.avif";
+import home from "assets/bg6.png";
 import play from "assets/play.png";
 import Navbar from './Navbar';
 import { motion } from "framer-motion";
@@ -16,13 +16,11 @@ function Home() {
       >
         <div className="content">
           <div className="title">
-            <h1>Entice <br /> Parlour</h1>
+            <h1>Ekas <br /> Boutique</h1>
           </div>  
           <div className="subTitle">
             <p>
-              At the Beauty Parlour, we believe in beauty with a conscience. 
-              We have created a salon that offers the highest quality hair 
-              services.
+            Soulful. Elegant. Ekas, serves as a one-stop destination for all kinds of latest & designer western & ethnic wear designed by expert designers and stitched by expert ladies tailors
             </p>  
           </div>
           {/*<img src={play} alt="Play Button" />*/}
@@ -35,30 +33,30 @@ function Home() {
       >
           <div className="grid">
             <div className="col">
-                <strong className='heads' >Parlour</strong>
-                <p>Entice Academy</p>
+                <strong className='heads' >Fashion Boutique</strong>
+                <p>Ekas Boutique</p>
             </div>
             <div className="col">
                 <strong className='heads'>Email</strong>
-                <p>entice@gmail.com</p>
+                <p>ekamjot@gmail.com</p>
             </div> 
             <div className="col">
                 <strong className='heads'>Mobile</strong>
-                <p>+91 8897666511</p>
+                <p>+91 7009555689</p>
             </div> 
             <div className="col">
                 <strong className='heads'>Address</strong>
-                <p>322, Long Fly,</p>
-                <p>997773 India</p>
+                <p>1198D,Modeltown</p>
+                <p>Ludhiana, Punjab</p>
             </div> 
             <div className="col">
                 <strong className='heads'>Services</strong>
-                <p>Sparking</p>
-                <p>SPA Cream</p>
+                <p></p>
+                <p>Western, Ethnic Wear</p>
             </div> 
             <div className="col">
                 <strong className='heads'> Working Hours</strong>
-                <p>Monday to Friday</p>
+                <p>Everyday</p>
                 <p>08:00 to 09:00</p>
             </div>   
           </div>
@@ -68,21 +66,23 @@ function Home() {
 }
 
 const Section = styled.section`
-  background: url(${home}) no-repeat center;
+  background: url(${home}) no-repeat center ;
   min-height: 100vh;
   background-size: cover;
+  
   position: relative;
   .home{
     height: 80%;
+    
     .content {
       display: flex;
       
       flex-direction: column;
       align-items: flex-start;
       width: 60%;
-      color: #fff;
-      gap: 1.2rem;
-      margin-top: 6rem;
+      color:  var(--ternary-color);
+      gap: 1rem;
+      margin-top: 4rem;
       padding-left: 18rem;
       .title {
         h1 {
@@ -93,8 +93,10 @@ const Section = styled.section`
       }
       .subTitle {
         p {
-          font-size:1.4rem;
-          width: 70%;
+          color:#000;
+          font-size:1.5rem;
+          width: 80%;
+          font-weight:900;
           margin-bottom: 2rem;
         }
       }
@@ -113,10 +115,10 @@ const Section = styled.section`
       display: grid;
       grid-template-columns: repeat(7, 3fr);
       gap: 4rem;
-      color: #fff;
+      color: var(--ternary-color);
 
       .heads{
-        color: var(--secondary-color)
+        color: #000;
       }
     }
   }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-function Title({ value }) {
+function Title({ value, col }) {
   return ( 
   <Div>
     <h1>{value}</h1>

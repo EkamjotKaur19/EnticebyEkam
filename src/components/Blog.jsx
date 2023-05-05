@@ -11,19 +11,19 @@ function Blog() {
   const [element, controls] = useScroll();
   const blogsData = [
     {
-      title:"PARLOUR JOURNAL",
-      type: "SPA",
-      description: "Our blog is intended to help answer your hair related questions and provide information about healthy hair choices and products.",
+      title:"Learn the art of the ethnic - how to slay Indian Wear",
+      type: "Fashion",
+      description: "We’ll give you the tea - see, mastering Indian wear takes a little bit of effort and time. Indian wear is heavily laid with extensively fashionable pieces and style statements, so much versatility.",
     },
     {
-      title:"REFELXOLOGY SKY",
-      type: "Relax",
-      description: "Reflexologists believe that these reflex points, pressing them creates real benefits for the person's health. If you have any questions, please email",
+      title:"Ways to embrace Indian fashion in everyday clothing",
+      type: "Indian",
+      description: "Let me start by declaring this - Indian fashion is no joke! The amount of dimension, dynamism, and creativity it takes to make one piece of traditional Indian wear will surpass your imagination.",
     },
     {
-      title:"MEDITATION SUN",
-      type: "Yoga",
-      description: "Keep your body and mind it pure and clean for the soul to reside in. Our Spa Offer yoga classes in areas. creates real benefits for the person's health.",
+      title:"Reel worthy wedding attires",
+      type: "Instagram",
+      description: "We don’t know if you know this but Instagram loves fashion. And the wedding seasons brings out the most of the ethnic excitement; its colors and styles, its pop plush beauty and statements. ",
     },
   ]
   return <Section id="blog" ref={element}>
@@ -73,7 +73,7 @@ position: relative;
     flex-direction: column;
     gap: 1rem;
     .image {
-      height: 15rem;
+      height: 8rem;
       background: url(${home}) no-repeat center center;
       background-size: cover;
       display: flex;
@@ -92,7 +92,7 @@ position: relative;
       text-transform: uppercase;
     }
     .description {
-      height: 10rem;
+      height: 9rem;
       color: var(--primary-color);
     }
     .more {

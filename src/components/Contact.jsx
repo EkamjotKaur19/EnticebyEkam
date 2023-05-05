@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import Title from './Title';
-import c3 from 'assets/cc.jpeg'
+import c3 from 'assets/cont.png'
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
 import { contactAnimation } from "animation";
@@ -10,7 +10,6 @@ function Contact() {
   const [element, controls] = useScroll();
   return (
     <Section id="contact" ref={element}>
-      <Title value="contact" />
       <motion.div className="contact"
       variants={contactAnimation}
       animate={controls}
@@ -36,13 +35,13 @@ function Contact() {
             </p>
             <div>
               <p>
-                <strong>Address:</strong> 33, Flyover Road,
+                <strong>Address:</strong> 1198D, Modeltown, Ludhiana
               </p>
               <p>
-                <strong>Email:</strong> entice@gmail.com
+                <strong>Email:</strong> ekamjot@gmail.com
               </p>
               <p>
-                <strong>Website:</strong> www.entice.com
+                <strong>Website:</strong> www.ekasbyekam.com
               </p>
             </div>
           </div>
@@ -59,26 +58,31 @@ function Contact() {
 }
 
 const Section = styled.section`
-min-height: 100vh;
+min-height: 120vh;
+
+.contact__data__description{
+  background-color:var(--primary-color);
+  padding:4%;
+}
 
  background: url(${c3}) no-repeat center;
-  min-height: 100vh;
+  min-height: 120vh;
   background-size: cover;
 .contact {
   
-  color: var(--primary-color);
+  color: #000;
   margin: 0rem 18rem;
   &__title {
     margin: 0rem 0rem 2rem 0;
     p {
       padding:2rem;
       text-transform: uppercase;
-      color: var(--secondary-color);
+      color: #000;
     }
     h2 {
       margin-top:2rem;
       font-size: 2rem;
-      color: var(--secondary-color);
+      color: #000;
     }
   }
   &__data {
@@ -136,10 +140,10 @@ min-height: 100vh;
       }
       button {
         width: 100%;
-        background-color: transparent;
+        background-color: var(--secondary-color);
         border: 0.1rem solid var(--secondary-color);
         height: 3rem;
-        color: var(--secondary-color);
+        color: #fff;
         text-transform: uppercase;
         cursor: pointer;
         transition: 0.5s ease-in-out;

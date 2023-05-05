@@ -13,57 +13,45 @@ function Pricing() {
   const plans = [
     {
       name: "Basic",
-      price: 1500,
+      price: 1400,
     },
     {
       name: "Pro",
-      price: 3500,
+      price: 2000,
     },
     {
       name: "Expert",
-      price: 6500,
+      price: 3000,
     },
   ];
 
   const data = [
     {
-      value: "Full face Rs.250",
+      value: "Simple Stitched",
       type: "Basic",
     },
     {
-      value: "Cheeks Rs. 90",
+      value: "Double Stitched",
       type: "Basic",
     },
     {
-      value: "Jawline Rs.50",
+      value: "Plazo Suit",
       type: "Basic",
     },
     {
-      value: "Lower Lip Rs.50",
-      type: "Basic",
-    },
-    {
-      value: "Upper Lip Rs.50",
-      type: "Basic",
-    },
-    {
-      value: "Under arms Rs.100",
-      type: "Basic",
-    },
-    {
-      value: "Full Legs Rs.450",
+      value: "Co-Ord Set",
       type: "Pro",
     },
     {
-      value: "Half Legs Rs.300",
+      value: "Indian saree",
       type: "Pro",
     },
     {
-      value: "Daily Backups",
+      value: "Western Dresses",
       type: "Expert",
     },
     {
-      value: "One Click Setup",
+      value: "Slip Dress",
       type: "Expert",
     },
   ]
@@ -76,8 +64,8 @@ function Pricing() {
         <img src={pricing2} alt="background" className="bg2" />
       </div>
       <div className="pricing__title">
-        <p>Find your pricing plan</p>
-        <h2>Finding the best salons in your city could be time consuming..</h2>
+        <p>Our moto is to provide modern and ethnic designer fashion at right price</p>
+        <h2>Finding the best boutique in your city could be time consuming..</h2>
       </div>
       <div className="pricing">
         {plans.map(({ name, price }, index) => {

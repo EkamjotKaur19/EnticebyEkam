@@ -14,18 +14,18 @@ function Services() {
 
   const data = [
     {
-      type: "Blowout",
-      text: "Shampoo and blow dry. If you are looking to celebrate your special day with us, please note we only have 3 stylists scheduled",
+      type: "Ethnic Wear",
+      text: "Ekas is your one stop online shopping destination for designer ethnic wear. Browse through our handpicked designs of sarees, anarkalis, lehengas, kurtis, etc at best price",
       image: service1,
     },
     {
-      type: "Olaplex",
-      text: "Hair treatment helping keep coloured hair healthy from the inside If you are looking to celebrate your special day with us.",
+      type: "Western",
+      text: "Ekas is all about combining the right amount of panache and comfort to create a symphony of style.It is a medley of colors, patterns, cuts, and fabrics",
       image: service2,
     },
     {
-      type: "Retouch",
-      text: "We bring to you a bouquet of services to remain worry free about your looks. We have made effortless beauty equipment and products.",
+      type: "Indo-Western",
+      text: "We showcase a new, contemporary design language that comes from India and belongs everywhere on the globe.",
       image: service3,
     },
   ];

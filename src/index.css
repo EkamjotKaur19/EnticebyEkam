@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 :root {
-  --primary-color: #c992ce;
-  --secondary-color: #2c161d;
+  --primary-color: #e481c3;
+  --secondary-color: #552a38;
+  --ternary-color: #7d3169;
   --font-family: "Work Sans";
 }
 

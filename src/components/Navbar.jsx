@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import logo from "assets/1.png";
+import logo from "assets/bgg2.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { useScroll } from "components/useScroll";
@@ -97,7 +97,7 @@ const Nav = styled(motion.nav)`
       li {
         a {
           font-family:'Roboto Slab';
-          color: #fff;
+          color: var(--ternary-color);
           text-decoration: none;
           font-weight: 700;
           font-size: 1.2rem;
@@ -131,7 +131,7 @@ const Nav = styled(motion.nav)`
       right: 0;
       width: ${({ state }) => (state ? "100%" : "0%")};
       height: 100vh;
-      background-color: var(--secondary-color);
+      background-color: var(--primary-color);
       opacity: 0;
       visibility: hidden;
       transition: 0.4s ease-in-out;

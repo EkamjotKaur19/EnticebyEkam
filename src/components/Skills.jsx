@@ -9,24 +9,24 @@ function Skills() {
   const [element, controls] = useScroll();
   const skillsData = [
     {
-      name: "Facial",
+      name: "Western",
       amount: 75,
     },
     {
-      name: "Skin",
-      amount: 50,
-    },
-    {
-      name: "SPA",
-      amount: 90,
-    },
-    {
-      name: "Cosmetic",
+      name: "Saree",
       amount: 70,
     },
     {
-      name: "Salon",
+      name: "Ethnic",
       amount: 90,
+    },
+    {
+      name: "Indo-Western",
+      amount: 80,
+    },
+    {
+      name: "Coord Sets",
+      amount: 50,
     },
   ];
   return (
@@ -62,12 +62,10 @@ function Skills() {
         </div>
         <div className="skills__content">
           <p className="title">
-            Beauty Services and Products
+            One stop solution for all your Fashion Needs.
           </p>
           <p className="description">
-            To be a successful beautician, you should have a wide range 
-            of skills in beauty services, good communication skills, 
-            and the ability to advise clients on suitable hairstyles.
+          Raise your OOTD game with us.
           </p>
         </div>
       </div>

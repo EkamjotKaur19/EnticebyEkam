@@ -39,7 +39,7 @@ function Footer() {
 }
 
 const Foot = styled(motion.footer)`
-background-color: var(--primary-color);
+background-color: var(--secondary-color);
 color: #fff;
 display: flex;
 font-size:1.5rem;
