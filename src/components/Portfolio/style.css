@@ -1,0 +1,104 @@
+.section-port{
+    min-height: 100vh;
+padding-bottom: 2rem;
+background-color: var(--secondary-color);
+}
+
+.grid{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "one one two two"
+  "one one three four"
+  "five six seven seven"
+  "eight six seven seven";
+}
+
+.grid-box{
+    height: 15rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.grid-box:nth-of-type(1) {
+    grid-area: one;
+    background: url('../../assets/black.jpg') no-repeat right center;
+    background-size: cover;
+    height: 100%;
+    z-index: 10;
+  }
+  .grid-box:nth-of-type(2) {
+    grid-area: two;
+    background: url('../../assets/blue.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 10;
+  }
+  .grid-box:nth-of-type(3) {
+    grid-area: three;
+    background: url('../../assets/green.jpg') no-repeat right center;
+    background-size: cover;
+  }
+  .grid-box:nth-of-type(4) {
+    grid-area: four;
+    background: url('../../assets/purple.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  .grid-box:nth-of-type(5) {
+    z-index: 10;
+    grid-area: five;
+    background: url('../../assets/kurti2.jpg') no-repeat right center;
+    background-size: cover;
+  }
+  .grid-box:nth-of-type(6) {
+    grid-area: six;
+    background: url('../../assets/red.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+  }
+  .grid-box:nth-of-type(7) {
+    grid-area: seven;
+    background: url('../../assets/wine.jpg') no-repeat right center;
+    background-size: cover;
+    height: 100%;
+  }
+  .grid-box:nth-of-type(8) {
+    grid-area: eight;
+    background: url('../../assets/kurti.jpg') no-repeat right center;
+    background-size: cover;
+    z-index: 10;
+  }
+
+  .portfolio-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 4rem 0;
+    
+  }
+
+  .portfolio-more span {
+    color: #fff;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) { 
+    .grid {
+      padding: 0;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five"
+      "six"
+      "seven"
+      "eight";
+      
+    }
+    .grid-box {
+        height: 25rem !important;
+      }
+  }

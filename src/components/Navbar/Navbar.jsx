@@ -17,7 +17,7 @@ function Navbar() {
   animate={controls} 
   state={isNavOpen ? 1 : 0}
   >
-    <div className="brand__container">
+    <div className="brand-container">
       <a href="#" className='brand'>
         <img className='logo-img' src={logo} alt="logo" />
         {/*<h3 className='logo-head' >Entice by Ekam</h3>*/}
@@ -66,7 +66,7 @@ const Nav = styled(motion.nav)`
   margin: 0 2rem;
   color: #fff;
   padding-top: 1rem;
-  .brand__container {
+  .brand-container {
     margin: 0 1rem;
 
     .logo-head{
@@ -109,7 +109,7 @@ const Nav = styled(motion.nav)`
   @media screen and (min-width: 280px) and (max-width: 1080px) {
     margin: 0;
     position: relative;
-    .brand__container {
+    .brand-container {
       display: flex;
       justify-content: space-between;
       align-items: center;

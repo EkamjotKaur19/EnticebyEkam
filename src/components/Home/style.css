@@ -1,0 +1,89 @@
+.section-home {
+  min-height: 100vh;
+  background: url('../../assets/bg6.png') no-repeat center ;
+  background-size: cover;
+  position: relative;
+}
+  
+.section-home .home{
+  height: 80%;
+}
+  
+.section-home .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  color:  var(--ternary-color);
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-left: 18rem;
+}
+  
+  .section-home .title h1 {
+    font-size: 5rem;
+    line-height: 5.3rem;
+    font-family:  'Bebas Neue';
+  }
+  
+  .section-home .subTitle p{
+      color:#000;
+      font-size:1.5rem;
+      width: 80%;
+      font-weight:900;
+      margin-bottom: 2rem;
+  }
+  
+  .section-home .info {
+    height:37%;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+
+      bottom: -14.7rem;
+      right: 0;
+      font-family: 'Open Sans';
+      font-size: 1.2rem;
+      background-color: var(--primary-color);
+      padding-top: 1rem;
+      padding-bottom: 0;
+      margin-top:2rem;
+    }
+
+    .section-home .grid {
+      display: grid;
+      margin-top: 0;
+      grid-template-columns: repeat(7, 3fr);
+      color: var(--ternary-color);
+
+      
+    }
+
+    .section-home .heads{
+      color: #000;
+    }
+  
+
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .section-home .home  .content {
+        padding-left: 2rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        
+      
+    }
+    .section-home .title  h1 {
+            font-size: 4rem;
+            line-height: 4rem;
+          }
+        
+    .section-home .info {
+      position: initial;
+      
+    }
+
+    .section-home .grid {
+      grid-template-columns: 1fr;
+    }
+  }

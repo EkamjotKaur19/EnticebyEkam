@@ -1,0 +1,134 @@
+.section-skill{
+    min-height: 100vh;
+  height: 140vh;
+  background-color: var(--secondary-color);
+}
+
+.sideTitle  h1 {
+    color: #fff;
+    font-size: 9rem;
+    z-index: 10;
+
+}
+
+.skills-title {
+    padding: 6rem 10rem;
+    
+  }
+
+  .skills-title p {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--primary-color);
+  }
+  .skills-title h2 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .skills {
+    display: flex;
+    padding: 0 5rem 0 20rem;
+    gap: 10rem;
+  }
+
+  .skills-bars {
+    transform: rotate(-90deg);
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .skills-bars-bar {
+    display: flex;
+    flex-direction: row-reverse;
+
+    gap: 1rem;
+  }
+
+.container-skill{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.container-skill span {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: var(--primary-color);
+  }
+  progress {
+    width: 30rem;
+    -webkit-appearance: none;
+    appearance: none;
+    
+  }
+  progress::-webkit-progress-bar {
+    height: 3rem;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+  }
+progress::-webkit-progress-value {
+    background-color: white; 
+    border-radius: 20px;
+  }
+
+  .skills-content{
+    display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      color: #fff;
+      z-index: 2;
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) { 
+    .section-skill{
+    overflow-x: hidden;
+    padding: 2rem 0;
+    }
+    .section-skill .background {
+      display: none;
+    }
+    .skills-title {
+      padding: 2rem;
+      text-align: center;
+      
+    }
+    .skills-title h2 {
+        font-size: 1.5rem;
+      }
+    .skills {
+      padding: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+      .skills-bars {
+        padding: 0.2rem;
+        gap: 0rem;
+        align-items: center;
+        justify-content: center;
+      }
+        .skills-bars-bar .container {
+            gap: 1rem;
+            
+          }
+          progress {
+            width: 12rem;
+            height: 0.5rem;
+            
+          }
+          progress::-webkit-progress-bar {
+            height: 0.3rem;
+          }
+          progress h3 {
+            font-size: 1rem;
+          }
+          .skills-content {
+            padding: 0 2rem;
+          }
+        }
+      

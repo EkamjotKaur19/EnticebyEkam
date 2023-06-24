@@ -1,0 +1,64 @@
+.section-blog{
+    min-height: 100vh;
+position: relative;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 5rem 15rem;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.image {
+    height: 8rem;
+    background: url('../../assets/p4.avif') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .title h3 {
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+    }
+  
+  .type {
+    color: var(--primary-color);
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .description {
+    height: 9rem;
+    color: var(--primary-color);
+  }
+  .more {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    
+  }
+
+  .more span {
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) { 
+    .section-blog{
+        margin: 2rem 0;
+    }
+    .blogs {
+      padding: 0 2rem;
+      grid-template-columns: 1fr;
+      margin: 0 1rem;
+    }
+  }

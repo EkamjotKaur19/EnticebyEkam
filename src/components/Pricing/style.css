@@ -1,0 +1,152 @@
+.section-price{
+  min-height: 100vh;
+padding: 5rem 0;
+position: relative;
+background-color: var(--secondary-color);
+overflow: hidden;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 10rem;
+}
+
+.bg1 {
+  position: absolute;
+  top: -60%;
+  left: -5%;
+  z-index: -1;
+}
+.bg2 {
+  position: absolute;
+  right: 0;
+  bottom: 5rem;
+}
+
+.pricing-title {
+  margin: 6rem 10rem;
+}
+
+.pricing-title p {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.pricing-title h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.pricing-plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.pricing-plan-name{
+  background-color: var(--primary-color);
+      width: 15rem;
+      height: 15rem;
+      border-radius: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: var(--secondary-color);
+}
+
+.pricing-plan-name h2 {
+  font-size: 2rem;
+  line-height: 1.3rem;
+}
+
+.pricing-plan-name-price{
+  color: #fff;
+  display: flex;
+  position: relative;
+}
+
+.pricing-plan-name-price span {
+  position: absolute;
+  top: 1rem;
+  left: -1.5rem;
+  font-size: 1.3rem;
+}
+.pricing-plan-name-price p {
+  font-size: 3.5rem;
+  padding-left:10px;
+  font-weight: bold;
+}
+.pricing-plan-content-features{
+  list-style-type: none;
+  text-align: center;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem
+}
+
+.pricing-plan-content-features .line {
+  text-decoration: line-through;
+}
+
+.pricing-plan-content-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  gap: 0.5rem;
+  
+}
+
+.pricing-plan-content-actions span {
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) { 
+  .section-price{
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  }
+  .pricing-title {
+    margin: 0;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .pricing-title h2 {
+    font-size: 1.3rem;
+  }
+  .background {
+    display: none;
+  }
+  .pricing {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 4rem;
+  }
+  .pricing-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .pricing-plan-name {
+    height: 10rem;
+    width: 10rem;
+  }
+  .pricing-plan-name h2 {
+    font-size: 1.5rem;
+  }
+  .pricing-plan-name-price p {
+    font-size: 3rem;
+  }
+        
+      
+  .pricing-plan :nth-child(2)  .pricing-plan-content {
+    padding: 0rem;
+    border: none;
+  }
+}

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import loadmore from "assets/loadmore.png";
-import styled from "styled-components";
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
+import { useScroll } from "../useScroll";
 import { testimonialsAnimations } from "animation";
-import Title from './Title';
+import Title from '../Title/Title';
+import './style.css'
 
 function Testimonials() {
   const [element, controls] = useScroll();
@@ -26,13 +25,13 @@ function Testimonials() {
       designation: "Happy Shopping",
       name: "Natalia",
       review:
-      "Thoroughly impressed Team Vika.You are doing awonderfuljob.Keepgoing.Wishingyou success.Excellentcollections and perfect stitching.A special thankyou to yourtailor(s).Theyareexceptionallytalented 👌❤Ihave never feltso comfortablein any of my other outfits.Shall keep you in my op priority list way. We always seek some new ideas and advices from our customer so that our customer can say proudly that they are not customers they are VIKA family, VIKA is just not a company, it’s a family of priceless customers. HAPPY SHOPPING!!"
+      "Thoroughly impressed Team Ekas.You are doing awonderfuljob.Keepgoing.Wishingyou success.Excellentcollections and perfect stitching.A special thankyou to yourtailor(s).They are exceptionally talented. HAPPY SHOPPING!!"
     },
   ];
   return (
-    <Section ref={element}>
+    <div className='setion-rev' ref={element}>
       <Title value="reviews"/>
-      <div className="container">
+      <div className="container-rev">
         <motion.div className="testimonials"
         variants={testimonialsAnimations}
         animate={controls}
@@ -88,89 +87,9 @@ function Testimonials() {
         </button>
         </motion.div>
       </div>
-    </Section>
+    </div>
   )
 }
 
-const Section = styled.section`
-overflow: hidden;
-
-
-
-.container {
-  min-height: 90vh;
-  background-color: var(--ternary-color);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  .testimonials {
-    display: flex;
-    gap: 1rem;
-    text-align: center;
-    justify-content: center;
-    font-size:1.3rem;
-    padding:3%;
-    width: 40%;
-    .testimonial {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      .image {
-        position: relative;
-        .circle2 {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 10rem;
-          width: 10rem;
-          border-radius: 10rem;
-          background-color: #8860e6b0;
-        }
-      }
-    }
-    .hidden {
-      display: none;
-    }
-    color: #fff;
-    .designation {
-      height: 8rem;
-    }
-  }
-  .controls{
-    display: flex;
-    gap: 1rem;
-    button {
-      padding: 0.5rem;
-      border-radius: 1rem;
-      background-color: var(--secondary-color);
-      border: 0.1rem solid transparent;
-      cursor: pointer;
-    }
-    .active {
-      background-color: transparent;
-      border: 0.1rem solid var(--secondary-color);
-    }
-  }
-}
-@media screen and (min-width: 280px) and (max-width: 1080px) { 
-  .background {
-    display: none;
-  }
-  .container {
-    padding: 4rem 0;
-    .testimonials {
-      width: 80%;
-      .testimonial {
-        .description {
-          height: 18rem;
-        }
-      }
-    }
-  }
-}
-`;
 
 export default Testimonials

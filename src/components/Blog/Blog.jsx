@@ -1,11 +1,10 @@
 import React from 'react';
-import styled from "styled-components";
 import play from "assets/play.png";
-import home from "assets/p4.avif";
-import Title from './Title';
+import Title from '../Title/Title';
 import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
+import { useScroll } from "../useScroll";
 import { blogsAnimation } from "animation";
+import './style.css'
 
 function Blog() {
   const [element, controls] = useScroll();
@@ -26,7 +25,7 @@ function Blog() {
       description: "We don’t know if you know this but Instagram loves fashion. And the wedding seasons brings out the most of the ethnic excitement; its colors and styles, its pop plush beauty and statements. ",
     },
   ]
-  return <Section id="blog" ref={element}>
+  return <div className='section-blog' id="blog" ref={element}>
     <Title value="Blog" />
     <div className="blogs">
         {blogsData.map(({ title, type, description }) => {
@@ -57,65 +56,8 @@ function Blog() {
           )
         })}
     </div>
-    </Section>
+    </div>
 }
 
-const Section = styled.section`
-min-height: 100vh;
-position: relative;
-.blogs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  margin: 5rem 15rem;
-  .blog {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    .image {
-      height: 8rem;
-      background: url(${home}) no-repeat center center;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .title {
-      h3 {
-        color: var(--secondary-color);
-        font-size: 1.5rem;
-      }
-    }
-    .type {
-      color: var(--primary-color);
-      font-weight: bolder;
-      text-transform: uppercase;
-    }
-    .description {
-      height: 9rem;
-      color: var(--primary-color);
-    }
-    .more {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      cursor: pointer;
-      span {
-        letter-spacing: 0.1rem;
-        text-transform: uppercase;
-        color: var(--primary-color);
-      }
-    }
-  }
-}
-@media screen and (min-width: 280px) and (max-width: 1080px) { 
-  margin: 2rem 0;
-  .blogs {
-    padding: 0 2rem;
-    grid-template-columns: 1fr;
-    margin: 0 1rem;
-  }
-}
-`;
 
 export default Blog
